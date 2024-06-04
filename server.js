@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
+    console.log(__dirname)
 });
 
 app.post('/charge', async (req, res) => {
