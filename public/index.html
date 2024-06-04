@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Show Registration</title>
-    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
@@ -24,10 +24,15 @@
         </div>
         <div id="card-element"></div>
         <a href="https://buy.stripe.com/test_28o8A99X3d6bays3cc" target="_blank">
+
+        <script async
+        src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+
         <stripe-buy-button buy-button-id="buy_btn_1PO5WkCxiZ7gi8V5EzZFJb9M" publishable-key="pk_test_51PO5UrCxiZ7gi8V52FpcLKRVQdlPcAzkoe84sKorsQbhP8CSqhIyeVFeSbMmV8HvxbRryKdGIm5GHWhOONz3hmpk00wJSjYcm5">
         </stripe-buy-button>
         <div id="card-errors" role="alert"></div>
     </form>
-    <script src="public/script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
